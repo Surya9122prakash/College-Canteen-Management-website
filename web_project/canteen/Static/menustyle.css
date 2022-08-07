@@ -1,0 +1,147 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    width:100%;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #efefef;
+    line-height: 1.5;
+}
+.background-image{
+    background-image: url('C:\Users\krthi\Desktop\College Canteen Management\web_project\canteen\Static\hback.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 200px;
+    height: 0vh;
+}
+
+.btn{
+    margin-top: 2rem;
+    width: 150px;
+    padding: 12px;
+    color: black;
+    background: bisque;
+    font-size: 16px;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.btn:hover{
+    background: wheat(212, 48, 48, 0.76);
+    transition: 0.5s;
+}
+
+.header{
+    position:fixed;
+    top:0;
+    left:0;
+    right:0;
+    z-index:1000;
+    padding: 1.5rem 8%;
+    display: flex;
+    align-items: center;
+    color: #fff;
+    justify-content: space-between;
+    background-color: black;
+}
+
+.header .logo{
+    font-size: 32px;
+    font-weight: bolder;
+    color:#fff;
+    padding-right: 10px;
+    margin-right: 20rem;
+}
+
+.header .logo i{
+    color: #fff;
+    padding: 5rem;
+}
+
+.header .navbar a{
+    font-size: 2.2rem;
+    margin: 0 1rem;
+    color: #fff;
+}
+
+.header .navbar a:hover{
+    color:#fff;
+}
+
+.header .btn{
+    background: transparent;
+    color:bisque;
+    border: 1px solid bisque;
+    font-size: 12px;
+    padding: 8px;
+}
+
+a{
+    text-decoration:none;
+    align-items: baseline;
+}
+
+.container{
+    width: 100%;
+    max-width: 100%;
+    margin: 0 auto;
+}
+
+.row{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.card{
+    flex: 1 1 21rem;
+    display: flex;
+    margin: 10px 20px;
+    flex-direction: column;
+    background:#fff;
+    box-shadow: 0 0 15px rgba(0,0,0,0.4);
+    padding: 10px 20px;
+    align-self:normal;
+}
+
+.card img{
+    max-width: 400px;
+    height: 50vh;
+}
+
+.card h5{
+    font-size: 1.3rem;
+    text-transform: uppercase;
+    margin: 10px 0;
+}
+
+.card p{
+    margin-bottom: 10px;
+}
+
+.card .btn{
+    display: inline-block;
+    margin-top: auto;
+    background: bisque;
+    color: #fff;
+    text-align: center;
+    color: #fff;
+    padding: 10px 20px;
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+}
+
+.container-fluid{
+    margin:130px;
+}
+

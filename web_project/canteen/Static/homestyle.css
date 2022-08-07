@@ -1,0 +1,125 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.background-image{
+    background-image: url('C:\Users\krthi\Desktop\College Canteen Management\web_project\canteen\Static\hback.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 200px;
+    height: 0vh;
+}
+
+.btn{
+    margin-top: 2rem;
+    width: 150px;
+    padding: 12px;
+    color: black;
+    background: bisque;
+    font-size: 16px;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.btn:hover{
+    background: wheat(212, 48, 48, 0.76);
+    transition: 0.5s;
+}
+
+.header{
+    position:fixed;
+    top:0;
+    left:0;
+    right:0;
+    z-index:1000;
+    padding: 1.5rem 8%;
+    display: flex;
+    align-items: center;
+    color: #fff;
+    justify-content: space-between;
+    background-color: black;
+}
+
+.header .logo{
+    font-size: 32px;
+    font-weight: bolder;
+    color:#fff;
+    padding-right: 10px;
+    margin-right: 20rem;
+}
+
+.header .logo i{
+    color: #fff;
+    padding: 5rem;
+}
+
+.header .navbar a{
+    font-size: 2.2rem;
+    margin: 0 1rem;
+    color: #fff;
+}
+
+.header .navbar a:hover{
+    color:#fff;
+}
+
+.header .btn{
+    background: transparent;
+    color:bisque;
+    border: 1px solid bisque;
+    font-size: 12px;
+    padding: 8px;
+}
+
+section{
+    padding: 100px 0 0px 0;
+}
+
+.home{
+    margin:0;
+    display: flex;
+}
+
+.home .home-content{
+    margin: 0;
+    width: 100%;
+    padding: 2rem;
+    border: 3px inset black;
+}
+
+.home .home-content #head{
+    margin: 0;
+}
+
+.home h3{
+    color: black;
+    margin-top: 6rem;
+    font-size: 5rem;
+    font-family: 'Comic Sans MS' ;
+}
+
+.max{
+    max-width: 1300px;
+    padding: 0 80px;
+    margin: auto;
+}
+
+.home .max{
+    width:100%;
+    display: flex;
+}
+.home p{
+    color: black;
+    margin-top: 1rem;
+    font-size: 30px;
+}
+
+a{
+    color: #fff;
+    text-decoration: none;
+}
+
+a:hover{
+    color:black;
+}

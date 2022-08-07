@@ -1,0 +1,12 @@
+.background-image{
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 1500px;
+    height: 100vh;
+}
+
+/* .form{
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+} */

@@ -1,0 +1,42 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Food Menu</title>
+    <link rel="stylesheet" href="{% static 'menustyle.css' %}">
+</head>
+<body>
+    <div class="background-image"></div>
+    <header class="header">
+        <a href="#" class="logo">Food Menu
+        </a> 
+        <nav class="navbar">
+            <a href="/">Home</a>
+            <a href="menu">Menu</a>
+        </nav>       
+    </header>
+
+    <div class="container-fluid">
+        <div class="row mx-auto">
+            {% for i in menu %}
+        <div class="card mx-auto mb-3" style="width: 18rem;">
+        <img class="card-img-top" src="{{i.thumbnail.url}}" alt="Card image cap">
+        <div class="card-body">
+            <h5 class="card-title">Name: {{i.name}}</h5>
+            <p class="card-text"><b>ID: {{i.id}}</b></p>
+            <p class="card-text"><b>Price: {{i.price}}</b></p>
+            <form method="POST">
+                {% csrf_token %}
+                <input type="submit" class="btn btn-outline-info col-lg-6" value="Place Order">
+            </form> 
+        </div>
+        </div>
+        {% endfor %}
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,52 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Canteen</title>
+    <link rel="stylesheet" href="{% static 'homestyle.css' %}">
+</head>
+<body>
+    <div class="background-image"></div>
+    <header class="header">
+        <a href="#" class="logo">Canteen
+        </a> 
+        <nav class="navbar">
+            <a href="#">Home</a>
+            <a href="menu">Menu</a>
+            {% if request.user.is_authenticated %}
+            <a>Welcome {{user.username}},</a>
+            <a href="logout">Logout</a>
+            {% else %}
+            <a href="{% url 'login' %}">Login</a>
+            <a href="{% url 'signup' %}">Sign Up</a> 
+            {% endif %}
+        </nav>       
+    </header>
+
+    <section class="home">
+        <div class="max" id="aboutus">
+            <div class="home-content">
+                <h3 id="head">About Us</h3>
+                <div class="box">
+                    <p>The objective of the Canteen and meal service is to protect by reducing the risk of foodborne illness, with proper sanitary conditions, and preventing adulterated food.</p>
+                    <p>From the very beginning of the College in 2003, the College Canteen has been functioning efficiently.</p>
+                    <p>The canteen is located inside the College. The hostellers and day scholars are provided meals by assuring food safety and quality.</p>
+                    <p>The students who come from faraway places, start their journey to the College early in the morning. The mid-day meal is provided.</p>
+                    <p>Even many day-scholars use canteen facilities for their breakfast and evening tea with snacks. Students are provided with three meals a day, bed coffee and evening tea/coffee.</p>
+                    <p>The Management of the Canteen is directly under the control of the College Administration. The Contractor of the Canteen is selected according to the available and suitable quotations.</p>
+                    <p> A well-experienced person in food services management, his team is managing, the canteen of our college. Students and staff of the College are benefited by the College canteen.</p>
+                    <p>The menu will be planned by the assigned team of Management and instructions will be given to the Contractor.  The contract of the Canteen will be renewed every year.</p>
+                    <p>The periodical meeting will be conducted by the team of Management and Contractor in order to appraise the function of the Canteen.</p>
+                    <p>Liberalization of food trade, growing consumer demand, physical set up, and sanitary conditions are also discussed during the appraisal.  Also, suggestions, complaints, and problems of the food consumers are taken into consideration.</p>
+                    <p>Only one common eating facility (canteen facility) shall be provided in the campus for day scholars, hostellers, guests of the College, teaching and non-teaching staff of the College.</p>
+                    <p>The management is fully committed to keeping the quality of the canteen for the utmost benefit of all concerned.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+</body>
+</html>
